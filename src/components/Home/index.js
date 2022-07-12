@@ -65,9 +65,14 @@ const Home = () => {
             />
           </h1>
           <h2>Software Developer / Fullstack Developer</h2>
-          <Link to="/contact" className="flat-button">
-            CONTACT ME
-          </Link>
+          <a
+            href="https://www.linkedin.com/in/smit-patel-h/"
+            target="_blank"
+            rel="noreferrer"
+            className="flat-button"
+          >
+            LINKEDIN
+          </a>
         </div>
         <Logo />
       </div>
