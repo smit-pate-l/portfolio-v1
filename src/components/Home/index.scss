@@ -1,11 +1,12 @@
 $primary-color: #f64c72;
+
 .home-page {
   .text-zone {
     position: absolute;
     left: 10%;
     top: 50%;
     transform: translateY(-50%);
-    width: 40%;
+    max-width: 40%;
     max-height: 90%;
   }
 
@@ -77,6 +78,52 @@ $primary-color: #f64c72;
     &:hover {
       background: $primary-color;
       color: #333;
+    }
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .home-page {
+    .text-zone {
+      left: 17%;
+      top: 50%;
+    }
+
+    h1 {
+      font-size:39px;
+      line-height: 43px;
+
+      &:before {
+        font-size: 18px;
+        position: absolute;
+        margin-top: -40px;
+        left: -15px;
+        opacity: 0.6;
+      }
+  
+      &:after {
+        content: '<h1/>';
+        font-family: 'La Belle Aurore', cursive;
+        color: $primary-color;
+        position:relative;
+        font-size: 18px;
+        position: absolute;
+        margin-top: 38px;
+        margin-left: 2px;
+      }
+
+      img {
+        margin-left: 10px;
+        width: 22px;
+      }
+    }
+
+    .flat-button {
+      color: $primary-color;
+      font-size: 9px;
+      font-weight: 400;
+      padding: 5px 12px;
     }
   }
 }
